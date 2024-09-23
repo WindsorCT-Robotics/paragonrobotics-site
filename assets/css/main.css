@@ -7,6 +7,32 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.responsive {
+	width: 100%; 
+	height: auto; 
+
+}
+/* Small devices (phones) */
+@media (max-width: 600px) {
+	.responsive {
+		width: 100%; 
+	}
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+	.responsive {
+		width: 75%; 
+	}
+}
+
+/* Large devices (desktops) */
+@media (min-width: 901px) {
+	.responsive {
+		width: 50%; 
+	}
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1850,7 +1876,7 @@ input, select, textarea {
 		}
 
 		.feature-list h3 {
-			color: #e97770 !important;
+			color: #ffffff !important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -2002,13 +2028,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #ffffff url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #2d3073 url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2017,12 +2043,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background: #fff;
+			background: #87171b;
+			color: #ffffff;
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
-				color: #484d55;
+				background: #87171b;
+				color: #ffffff;
 			}
 
 		.wrapper.style3 {
@@ -2214,6 +2241,7 @@ input, select, textarea {
 	#intro {
 		padding-bottom: 8em;
 		text-align: center;
+		background-color: #2d3073;
 	}
 
 		#intro p.style1 {
@@ -2247,6 +2275,7 @@ input, select, textarea {
 /* Features */
 
 	#features header.style1 {
+		
 		padding-bottom: 5em;
 	}
 
@@ -2268,7 +2297,9 @@ input, select, textarea {
 		}
 
 /* Main */
-
+   #our-team {
+	color: #ffffff;
+   }
 /* Footer */
 
 	#footer {
