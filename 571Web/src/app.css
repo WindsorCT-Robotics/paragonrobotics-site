@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+#topbar {
+    @apply bg-red-950 text-white;
+    @apply shadow-xl;
+    @apply pt-4
+}
+
+#body {
+    @apply bg-blue-900;
+    @apply shadow-lg shadow-slate-950/50;
+}
+#ext-top-text {
+    @apply bg-red-950 shadow-lg shadow-slate-950/50;
+    @apply text-white;
+    @apply rounded-b-lg; 
+    @apply w-1/2;  
+    @apply h-full;
+}
+#article-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+    @apply gap-4;
+    @apply mt-4;
+}
+#title-header {
+    @apply ml-4;
+    @apply mr-8;
+    @apply ring-3;
+    @apply shadow-lg;
+    @apply mt-2;
+}
