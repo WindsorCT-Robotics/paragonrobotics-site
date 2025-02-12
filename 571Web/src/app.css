@@ -1,27 +1,34 @@
 @import 'tailwindcss';
 
+@theme {
+    --color-rlogocolor: #162651
+}
+#content-wrapper {
+    @apply flex flex-col min-h-screen;
+}
+
 #topbar {
     @apply bg-red-950 text-white;
     @apply shadow-xl;
-    @apply pt-4
+    @apply pt-4;
+}
+
+#topbar2 {
+    @apply bg-red-950 text-white;
+    @apply shadow-xl;
+    @apply ml-60;
+    @apply mr-60;
 }
 
 #body {
     @apply bg-blue-900;
     @apply shadow-lg shadow-slate-950/50;
 }
-#ext-top-text {
-    @apply bg-red-950 shadow-lg shadow-slate-950/50;
-    @apply text-white;
-    @apply rounded-b-lg; 
-    @apply w-1/2;  
-    @apply h-full;
+
+#toptext {
+    @apply text-2xl;
 }
-#article-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
-    @apply gap-4;
-    @apply mt-4;
-}
+
 #title-header {
     @apply ml-4;
     @apply mr-8;
@@ -29,3 +36,29 @@
     @apply shadow-lg;
     @apply mt-2;
 }
+
+#article-grid {
+    @apply grid grid-cols-1 md:grid-cols-2;
+    @apply gap-4;
+    @apply mt-4;
+}
+
+#footer {
+    @apply bg-rlogocolor;
+    @apply text-white;
+    @apply text-xl;
+    @apply mt-auto; 
+    
+    @apply grid *:grid-cols-2;
+}
+#f-images {
+    @apply gap-4;
+    @apply shadow-lg;
+}
+
+
+#contact {
+    @apply gap-4;
+    @apply shadow-lg
+}
+
