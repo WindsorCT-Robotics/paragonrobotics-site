@@ -47,18 +47,15 @@
     @apply bg-rlogocolor;
     @apply text-white;
     @apply text-xl;
-    @apply mt-auto; 
-    
+    @apply mt-auto;
+    @apply pt-8;
     @apply grid *:grid-cols-2;
 }
-#f-images {
-    @apply gap-4;
-    @apply shadow-lg;
-}
-
 
 #contact {
     @apply gap-4;
-    @apply shadow-lg
+    @apply shadow-lg;
+    @apply mr-auto;
+
 }
 

@@ -1,3 +1,9 @@
+<script>
+
+    let user = $state("Enter your email in this box");
+    import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from 'flowbite-svelte';
+</script>
+
 <div id="content-wrapper" class="flex flex-col min-h-screen">
     <div id="topbar" class="shadow-xl">
         <h1 id="toptext"><center>Paragon Robotics</center></h1>
@@ -22,15 +28,16 @@
         </div>
     </div>
 
-    <div id="footer">
-        <div id="f-images">
-            <h1>this is an image slideshow</h1>
-        </div>
-      
-        <div id="contact">
-            <h1>this is a contact form</h1>
-        </div>
 
-        <center>&copy; Paragon Robotics 2025</center>
-    </div>
+    <Footer id="footer">
+        <div class="sm:flex sm:items-center sm:justify-between">
+        <FooterCopyright href="/" by="Flowbite™" year={2022} />
+        <FooterLinkGroup ulClass="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+         <FooterLink href="/">About</FooterLink>
+            <FooterLink href="/">Privacy Policy</FooterLink>
+            <FooterLink href="/">Licensing</FooterLink>
+            <FooterLink href="/">Contact</FooterLink>
+        </FooterLinkGroup>
+        </div>
+    </Footer>
 </div>
