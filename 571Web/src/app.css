@@ -3,62 +3,21 @@
 @theme {
     --color-rlogocolor: #162651
 }
-#content-wrapper {
-    @apply flex flex-col min-h-screen;
-}
 
-#topbar {
-    @apply bg-red-950 text-white;
-    @apply shadow-xl;
-    @apply pt-4;
-}
 
-#topbar2 {
-    @apply bg-red-950 text-white;
-    @apply shadow-xl;
-    @apply ml-60;
-    @apply mr-60;
-}
-
-#body {
-    @apply bg-blue-900;
-    @apply shadow-lg shadow-slate-950/50;
-}
-
-#toptext {
-    @apply text-2xl;
-}
-
-#title-header {
-    @apply ml-4;
-    @apply mr-8;
-    @apply ring-3;
-    @apply shadow-lg;
-    @apply mt-2;
-}
-
-#article-grid {
-    @apply grid grid-cols-1 md:grid-cols-2;
-    @apply gap-4;
-    @apply mt-4;
-}
-
-#footer {
-    @apply bg-rlogocolor;
+#bg {
+    @apply bg-zinc-800;
     @apply text-white;
-    @apply text-xl;
-    @apply mt-auto; 
-    
-    @apply grid *:grid-cols-2;
+    @apply w-screen;
+    @apply h-screen;
 }
-#f-images {
-    @apply gap-4;
-    @apply shadow-lg;
-}
+#maintext {
+    @apply ml-[70%];
+    @apply mt-[20%];
+    @apply mr-[10%];
 
-
-#contact {
-    @apply gap-4;
-    @apply shadow-lg
+    @apply shadow-xl;
+    @apply bg-red-900;
+    @apply text-3xl;
 }
 
