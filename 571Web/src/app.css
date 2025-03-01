@@ -4,19 +4,18 @@
     --color-rlogocolor: #162651
 }
 
-
 #bg {
     @apply bg-zinc-800;
     @apply text-white;
     @apply w-screen;
     @apply h-screen;
 }
+
 #maintext {
-    @apply ml-[70%];
-    @apply mt-[20%];
-    @apply mr-[10%];
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     @apply shadow-xl;
+    @apply p-8;
     @apply bg-red-900;
     @apply text-3xl;
 }
