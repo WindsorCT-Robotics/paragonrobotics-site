@@ -1,16 +1,22 @@
 <script>
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
-    import logo from '$lib/images/logo.png';
+  import Navbar from './assets/Navbar.svelte';
+  import Article from './assets/Article.svelte';
 </script>
 
-<div id="content-wrapper" class="flex flex-col min-h-screen">
-    <div id="bg" class="shadow-sm">
-        <div id="topbar"></div>
-        <div id="logo-cont" class="flex justify-center items-center p-4 mt-16" style="height: calc(100vh - 4rem)"> 
-            <h1 id="maintext">
-                <img alt="Team Logo" src={logo} class="max-h-full">
-                Paragon Robotics
-            </h1>
-        </div>
+<Navbar />
+
+<div id="bg" class="bg-zinc-800 text-white min-h-screen p-8 flex">
+  <div class="w-full sm:w-1/4 p-14">
+    <div class="grid gap-6">
+      <Article className="col-span-1" />
+      <Article className="col-span-1" />
+      <Article className="col-span-1" />
+      <Article className="col-span-1" />
+      <Article className="col-span-1" />
+      <Article className="col-span-1" />
     </div>
+  </div>  
+
+  <div class="flex-grow p-4">
+  </div>
 </div>

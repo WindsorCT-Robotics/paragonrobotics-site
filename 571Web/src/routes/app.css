@@ -25,3 +25,12 @@
     @apply left-0;
     @apply z-40; 
 }
+
+#logo-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    padding-top: 2rem;
+}
