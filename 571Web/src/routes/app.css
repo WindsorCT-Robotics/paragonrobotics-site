@@ -1,0 +1,36 @@
+
+@import 'tailwindcss';
+
+@theme {
+    --color-rlogocolor: #162651;
+}
+
+#bg {
+    @apply bg-zinc-800;
+    @apply text-white;
+    @apply w-screen;
+    @apply h-screen;
+}
+
+#maintext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @apply shadow-xl;
+    @apply p-8;
+    @apply bg-red-900;
+    @apply text-3xl;
+    @apply w-full; 
+    @apply text-center;
+    @apply fixed; 
+    @apply top-0; 
+    @apply left-0;
+    @apply z-40; 
+}
+
+#logo-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    padding-top: 2rem;
+}
