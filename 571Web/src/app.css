@@ -25,3 +25,7 @@
     @apply left-0;
     @apply z-40; 
 }
+
+#nav {
+    @apply bg-red-900
+}

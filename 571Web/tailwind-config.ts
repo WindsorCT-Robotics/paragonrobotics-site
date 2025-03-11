@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        windsorRed: '#822224', // Custom color
+        wred: '#822224', // Custom color
       },
       fontFamily: {
         evliEmpire: ['EvliEmpire', 'sans-serif'], // Custom font family
