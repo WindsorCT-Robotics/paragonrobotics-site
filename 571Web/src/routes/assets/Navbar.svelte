@@ -50,7 +50,7 @@
         <ul class="md:hidden flex flex-col items-center bg-red-700 text-lg p-4">
             {#each navItems as item}
                 <li>
-                    <a class="cursor-pointer p-2 hover:bg-white/20 w-full text-center"
+                    <a class="cursor-pointer p-2 w-full text-center"
                        href={item.link}
                        on:click={() => selectNavItem(item)}>
                         {item.name}
@@ -66,9 +66,5 @@
         list-style: none;
         padding: 0;
         margin: 0;
-    }
-
-    a.selected {
-        background-color: rgba(255, 255, 255, 0.3);
     }
 </style>
