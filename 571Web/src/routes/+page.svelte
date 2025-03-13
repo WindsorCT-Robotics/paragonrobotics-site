@@ -2,7 +2,6 @@
   import Navbar from './assets/Navbar.svelte';
   import Article2025Update1 from './assets/Article2025Update1.svelte';
   import Article2025Update2 from './assets/Article2025Update2.svelte';
-  import PhotoCarosel from './assets/PhotoCarosel.svelte';
 </script>
 
 <div id="bg" class="bg-zinc-800 text-white min-h-screen">
@@ -13,6 +12,5 @@
       <Article2025Update2 />
       <Article2025Update1 />
     </div>
-    <PhotoCarosel />
   </div>  
 </div>

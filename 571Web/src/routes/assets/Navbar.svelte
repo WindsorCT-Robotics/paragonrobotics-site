@@ -1,6 +1,6 @@
 <script>
     import { writable } from 'svelte/store';
-    import logo from '$lib/images/logo.png';
+    import logo from './images/logo.png';
 
     export let navItems = [
         { name: 'Home', link: '/' },

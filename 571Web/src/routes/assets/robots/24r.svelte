@@ -1,6 +1,6 @@
 <script lang="ts">
     export let className: string = "";
-    import r24 from '$lib/images/2024robot.jpg';
+    import r24 from '$assets/images/2024robot.jpg';
 </script>
 
 <div class="outline-2 outline-white p-4 bg-zinc-900 rounded-lg shadow-lg border border-gray-700 {className}">
