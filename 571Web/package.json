@@ -11,7 +11,9 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"deploy": "gh-pages -d public",
+		"build-2-git": "rollup -c"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.7",
@@ -42,9 +44,11 @@
 		"body-parser": "^1.20.3",
 		"express": "^4.21.2",
 		"flowbite-svelte": "^0.48.4",
+		"gh-pages": "^6.3.0",
 		"nodemailer": "^6.10.0",
 		"path": "^0.12.7",
 		"svelte-swiper": "^1.0.1",
 		"swiper": "^11.2.5"
-	}
+	},
+	"homepage": "https://paragonrobotics.org/"
 }

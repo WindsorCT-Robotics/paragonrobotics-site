@@ -10,5 +10,6 @@ export default defineConfig({
 			$assets: path.resolve('./src/routes/assets')
 			
 		}
-	}
+	},
+	base: "/"
 });
