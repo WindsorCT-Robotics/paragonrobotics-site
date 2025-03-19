@@ -1,10 +1,16 @@
 import adapter from '@sveltejs/adapter-static';
 
-export default {
+const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/paragonrobotics-site' : '',
+      base: '/paragonrobotics-site'
+    },
+    appDir: 'app',
+    prerender: {
+      handleHttpError: 'warn' 
     }
   }
 };
+
+export default config;

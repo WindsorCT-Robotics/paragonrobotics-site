@@ -1,6 +1,6 @@
 {
   ".svelte-kit/generated/client-optimized/app.js": {
-    "file": "_app/immutable/entry/app.D35I3FJj.js",
+    "file": "app/immutable/entry/app.D8KJ-fIs.js",
     "name": "entry/app",
     "src": ".svelte-kit/generated/client-optimized/app.js",
     "isEntry": true,
@@ -20,7 +20,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
-    "file": "_app/immutable/nodes/0.BhlKyjCF.js",
+    "file": "app/immutable/nodes/0.CWQdMN5N.js",
     "name": "nodes/0",
     "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
     "isEntry": true,
@@ -30,11 +30,11 @@
       "_ffY1Snt6.js"
     ],
     "css": [
-      "_app/immutable/assets/0.D84IHoPr.css"
+      "app/immutable/assets/0.CeQFiKF4.css"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.D3zYr8mw.js",
+    "file": "app/immutable/nodes/1.InKtr5Im.js",
     "name": "nodes/1",
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
     "isEntry": true,
@@ -44,11 +44,11 @@
       "_viMR3mLD.js",
       "_ffY1Snt6.js",
       "_Bb99phst.js",
-      "_BxJvnzup.js"
+      "_Bc8hA1u1.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "file": "_app/immutable/nodes/2.BdTudvCm.js",
+    "file": "app/immutable/nodes/2.BPI9CX5X.js",
     "name": "nodes/2",
     "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
     "isEntry": true,
@@ -57,12 +57,12 @@
       "_C29BUe4J.js",
       "_viMR3mLD.js",
       "_ffY1Snt6.js",
-      "_DowIULLe.js",
+      "_biky_RK0.js",
       "_BjIPQ6ib.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/3.js": {
-    "file": "_app/immutable/nodes/3.CvF5gLsf.js",
+    "file": "app/immutable/nodes/3.DjQPFD4k.js",
     "name": "nodes/3",
     "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
     "isEntry": true,
@@ -71,12 +71,12 @@
       "_C29BUe4J.js",
       "_viMR3mLD.js",
       "_ffY1Snt6.js",
-      "_DowIULLe.js",
+      "_biky_RK0.js",
       "_BjIPQ6ib.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/4.js": {
-    "file": "_app/immutable/nodes/4.T9ckh3ex.js",
+    "file": "app/immutable/nodes/4.B--2kGKO.js",
     "name": "nodes/4",
     "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
     "isEntry": true,
@@ -85,62 +85,71 @@
       "_C29BUe4J.js",
       "_viMR3mLD.js",
       "_ffY1Snt6.js",
-      "_DowIULLe.js",
+      "_biky_RK0.js",
       "_BjIPQ6ib.js"
     ],
     "assets": [
-      "_app/immutable/assets/2023robot.CNb6onnC.jpg",
-      "_app/immutable/assets/2024robot.DBCrl-EW.jpg"
+      "app/immutable/assets/2023robot.CNb6onnC.jpg",
+      "app/immutable/assets/2024robot.DBCrl-EW.jpg"
     ]
   },
   "_BLIQICtd.js": {
-    "file": "_app/immutable/chunks/BLIQICtd.js",
+    "file": "app/immutable/chunks/BLIQICtd.js",
     "name": "index",
     "imports": [
       "_ffY1Snt6.js"
     ]
   },
   "_Bb99phst.js": {
-    "file": "_app/immutable/chunks/Bb99phst.js",
+    "file": "app/immutable/chunks/Bb99phst.js",
     "name": "render",
     "imports": [
       "_ffY1Snt6.js",
       "_C29BUe4J.js"
     ]
   },
+  "_Bc8hA1u1.js": {
+    "file": "app/immutable/chunks/Bc8hA1u1.js",
+    "name": "entry",
+    "imports": [
+      "_ffY1Snt6.js",
+      "_BLIQICtd.js",
+      "_D-8c7onk.js",
+      "_DC1pPFTa.js"
+    ]
+  },
   "_BjIPQ6ib.js": {
-    "file": "_app/immutable/chunks/BjIPQ6ib.js",
+    "file": "app/immutable/chunks/BjIPQ6ib.js",
     "name": "props",
     "imports": [
       "_ffY1Snt6.js",
       "_BLIQICtd.js"
     ]
   },
-  "_BxJvnzup.js": {
-    "file": "_app/immutable/chunks/BxJvnzup.js",
-    "name": "entry",
-    "imports": [
-      "_ffY1Snt6.js",
-      "_BLIQICtd.js",
-      "_DC1pPFTa.js"
-    ]
-  },
   "_C29BUe4J.js": {
-    "file": "_app/immutable/chunks/C29BUe4J.js",
+    "file": "app/immutable/chunks/C29BUe4J.js",
     "name": "disclose-version",
     "imports": [
       "_ffY1Snt6.js"
     ]
   },
+  "_D-8c7onk.js": {
+    "file": "app/immutable/chunks/D-8c7onk.js",
+    "name": "paths"
+  },
   "_DC1pPFTa.js": {
-    "file": "_app/immutable/chunks/DC1pPFTa.js",
+    "file": "app/immutable/chunks/DC1pPFTa.js",
     "name": "index-client",
     "imports": [
       "_ffY1Snt6.js"
     ]
   },
-  "_DowIULLe.js": {
-    "file": "_app/immutable/chunks/DowIULLe.js",
+  "_Navbar.BqUs8lx0.css": {
+    "file": "app/immutable/assets/Navbar.BqUs8lx0.css",
+    "src": "_Navbar.BqUs8lx0.css"
+  },
+  "_biky_RK0.js": {
+    "file": "app/immutable/chunks/biky_RK0.js",
     "name": "Navbar",
     "imports": [
       "_C29BUe4J.js",
@@ -148,49 +157,46 @@
       "_ffY1Snt6.js",
       "_Bb99phst.js",
       "_BjIPQ6ib.js",
-      "_BLIQICtd.js"
+      "_BLIQICtd.js",
+      "_D-8c7onk.js"
     ],
     "css": [
-      "_app/immutable/assets/Navbar.BqUs8lx0.css"
+      "app/immutable/assets/Navbar.BqUs8lx0.css"
     ],
     "assets": [
-      "_app/immutable/assets/logo.C2OPpdzW.png"
+      "app/immutable/assets/logo.C2OPpdzW.png"
     ]
   },
-  "_Navbar.BqUs8lx0.css": {
-    "file": "_app/immutable/assets/Navbar.BqUs8lx0.css",
-    "src": "_Navbar.BqUs8lx0.css"
-  },
   "_ffY1Snt6.js": {
-    "file": "_app/immutable/chunks/ffY1Snt6.js",
+    "file": "app/immutable/chunks/ffY1Snt6.js",
     "name": "runtime"
   },
   "_viMR3mLD.js": {
-    "file": "_app/immutable/chunks/viMR3mLD.js",
+    "file": "app/immutable/chunks/viMR3mLD.js",
     "name": "legacy",
     "imports": [
       "_ffY1Snt6.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
-    "file": "_app/immutable/entry/start.JtnIwXtM.js",
+    "file": "app/immutable/entry/start.tMCpLNw6.js",
     "name": "entry/start",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_BxJvnzup.js"
+      "_Bc8hA1u1.js"
     ]
   },
   "src/routes/assets/images/2023robot.jpg": {
-    "file": "_app/immutable/assets/2023robot.CNb6onnC.jpg",
+    "file": "app/immutable/assets/2023robot.CNb6onnC.jpg",
     "src": "src/routes/assets/images/2023robot.jpg"
   },
   "src/routes/assets/images/2024robot.jpg": {
-    "file": "_app/immutable/assets/2024robot.DBCrl-EW.jpg",
+    "file": "app/immutable/assets/2024robot.DBCrl-EW.jpg",
     "src": "src/routes/assets/images/2024robot.jpg"
   },
   "src/routes/assets/images/logo.png": {
-    "file": "_app/immutable/assets/logo.C2OPpdzW.png",
+    "file": "app/immutable/assets/logo.C2OPpdzW.png",
     "src": "src/routes/assets/images/logo.png"
   }
 }

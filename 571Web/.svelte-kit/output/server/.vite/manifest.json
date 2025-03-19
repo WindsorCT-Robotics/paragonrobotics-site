@@ -5,11 +5,12 @@
     "src": ".svelte-kit/generated/server/internal.js",
     "isEntry": true,
     "imports": [
-      "_internal.js"
+      "_internal.js",
+      "_paths.js"
     ]
   },
   "_Navbar.BqUs8lx0.css": {
-    "file": "_app/immutable/assets/Navbar.BqUs8lx0.css",
+    "file": "app/immutable/assets/Navbar.BqUs8lx0.css",
     "src": "_Navbar.BqUs8lx0.css"
   },
   "_Navbar.js": {
@@ -17,13 +18,14 @@
     "name": "Navbar",
     "imports": [
       "_index.js",
-      "_index2.js"
+      "_index2.js",
+      "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/Navbar.BqUs8lx0.css"
+      "app/immutable/assets/Navbar.BqUs8lx0.css"
     ],
     "assets": [
-      "_app/immutable/assets/logo.C2OPpdzW.png"
+      "app/immutable/assets/logo.C2OPpdzW.png"
     ]
   },
   "_exports.js": {
@@ -45,8 +47,13 @@
     "file": "chunks/internal.js",
     "name": "internal",
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_paths.js"
     ]
+  },
+  "_paths.js": {
+    "file": "chunks/paths.js",
+    "name": "paths"
   },
   "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
@@ -66,9 +73,10 @@
     "isEntry": true,
     "imports": [
       "_index.js",
-      "_internal.js",
+      "_paths.js",
       "_exports.js",
-      "_index2.js"
+      "_index2.js",
+      "_internal.js"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -77,7 +85,7 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "css": [
-      "_app/immutable/assets/_layout.BhbOs63o.css"
+      "app/immutable/assets/_layout.DB5sOQJH.css"
     ]
   },
   "src/routes/+layout.ts": {
@@ -97,15 +105,15 @@
     ]
   },
   "src/routes/assets/images/2023robot.jpg": {
-    "file": "_app/immutable/assets/2023robot.CNb6onnC.jpg",
+    "file": "app/immutable/assets/2023robot.CNb6onnC.jpg",
     "src": "src/routes/assets/images/2023robot.jpg"
   },
   "src/routes/assets/images/2024robot.jpg": {
-    "file": "_app/immutable/assets/2024robot.DBCrl-EW.jpg",
+    "file": "app/immutable/assets/2024robot.DBCrl-EW.jpg",
     "src": "src/routes/assets/images/2024robot.jpg"
   },
   "src/routes/assets/images/logo.png": {
-    "file": "_app/immutable/assets/logo.C2OPpdzW.png",
+    "file": "app/immutable/assets/logo.C2OPpdzW.png",
     "src": "src/routes/assets/images/logo.png"
   },
   "src/routes/pages/contact/+page.svelte": {
@@ -128,8 +136,8 @@
       "_index.js"
     ],
     "assets": [
-      "_app/immutable/assets/2023robot.CNb6onnC.jpg",
-      "_app/immutable/assets/2024robot.DBCrl-EW.jpg"
+      "app/immutable/assets/2023robot.CNb6onnC.jpg",
+      "app/immutable/assets/2024robot.DBCrl-EW.jpg"
     ]
   }
 }

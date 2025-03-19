@@ -1,6 +1,7 @@
-import { I as fallback, T as ensure_array_like, S as attr, J as attr_class, G as escape_html, U as store_get, V as unsubscribe_stores, K as bind_props, C as pop, A as push } from "./index.js";
+import { I as fallback, T as ensure_array_like, S as attr, J as attr_class, G as escape_html, U as store_get, M as stringify, V as unsubscribe_stores, K as bind_props, C as pop, A as push } from "./index.js";
 import { w as writable } from "./index2.js";
-const logo = "/_app/immutable/assets/logo.C2OPpdzW.png";
+import { b as base } from "./paths.js";
+const logo = "/paragonrobotics-site/app/immutable/assets/logo.C2OPpdzW.png";
 function Navbar($$payload, $$props) {
   push();
   var $$store_subs;
@@ -8,7 +9,6 @@ function Navbar($$payload, $$props) {
     $$props["navItems"],
     () => [
       { name: "Home", link: "/" },
-      //{ name: 'About', link: '/pages/about' },
       { name: "Robots", link: "/pages/robots" },
       { name: "Contact", link: "/pages/contact" }
     ],
@@ -22,7 +22,7 @@ function Navbar($$payload, $$props) {
     let item = each_array[$$index];
     $$payload.out += `<li><a${attr_class("cursor-pointer p-2", void 0, {
       "selected": store_get($$store_subs ??= {}, "$selectedNavItem", selectedNavItem) === item.name
-    })}${attr("href", item.link)}>${escape_html(item.name)}</a></li>`;
+    })}${attr("href", `${stringify(base)}${stringify(item.link)}`)}>${escape_html(item.name)}</a></li>`;
   }
   $$payload.out += `<!--]--></ul></div> `;
   if (store_get($$store_subs ??= {}, "$menuOpen", menuOpen)) {
@@ -31,7 +31,7 @@ function Navbar($$payload, $$props) {
     $$payload.out += `<ul class="md:hidden flex flex-col items-center bg-red-700 text-lg p-4 svelte-19gwqu9"><!--[-->`;
     for (let $$index_1 = 0, $$length = each_array_1.length; $$index_1 < $$length; $$index_1++) {
       let item = each_array_1[$$index_1];
-      $$payload.out += `<li><a class="cursor-pointer p-2 w-full text-center"${attr("href", item.link)}>${escape_html(item.name)}</a></li>`;
+      $$payload.out += `<li><a class="cursor-pointer p-2 w-full text-center"${attr("href", `${stringify(base)}${stringify(item.link)}`)}>${escape_html(item.name)}</a></li>`;
     }
     $$payload.out += `<!--]--></ul>`;
   } else {

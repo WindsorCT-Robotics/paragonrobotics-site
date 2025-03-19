@@ -1,20 +1,6 @@
 import { H as HYDRATION_ERROR, g as get_next_sibling, d as define_property, s as set_active_reaction, a as set_active_effect, i as is_array, b as active_effect, c as active_reaction, e as init_operations, f as get_first_child, h as HYDRATION_START, j as HYDRATION_END, k as hydration_failed, l as clear_text_content, m as array_from, n as component_root, o as is_passive_event, p as create_text, q as branch, r as push, t as component_context, u as pop, v as set, L as LEGACY_PROPS, w as get, x as flushSync, y as mutable_source, z as render, A as push$1, B as setContext, C as pop$1 } from "./index.js";
 import "clsx";
-let base = "";
-let assets = base;
-const app_dir = "_app";
-const initial = { base, assets };
-function override(paths) {
-  base = paths.base;
-  assets = paths.assets;
-}
-function reset() {
-  base = initial.base;
-  assets = initial.assets;
-}
-function set_assets(path) {
-  assets = initial.assets = path;
-}
+import "./paths.js";
 let public_env = {};
 let safe_public_env = {};
 function set_private_env(environment) {
@@ -476,7 +462,7 @@ const options = {
   root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
+    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -548,7 +534,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "yowygh"
+  version_hash: "1kksfzt"
 };
 async function get_hooks() {
   let handle;
@@ -567,23 +553,17 @@ async function get_hooks() {
   };
 }
 export {
-  assets as a,
-  base as b,
-  app_dir as c,
-  read_implementation as d,
-  options as e,
-  set_private_env as f,
+  set_private_env as a,
+  prerendering as b,
+  set_public_env as c,
+  set_safe_public_env as d,
+  set_read_implementation as e,
+  set_building as f,
   get_hooks as g,
-  prerendering as h,
-  set_public_env as i,
-  set_safe_public_env as j,
-  set_read_implementation as k,
-  set_assets as l,
-  set_building as m,
-  set_manifest as n,
-  override as o,
+  set_manifest as h,
+  set_prerendering as i,
+  options as o,
   public_env as p,
-  set_prerendering as q,
-  reset as r,
+  read_implementation as r,
   safe_public_env as s
 };

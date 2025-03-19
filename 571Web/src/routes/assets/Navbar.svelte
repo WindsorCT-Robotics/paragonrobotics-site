@@ -1,12 +1,12 @@
 <script>
     import { writable } from 'svelte/store';
     import logo from './images/logo.png';
+    import { base } from '$app/paths';
 
     export let navItems = [
         { name: 'Home', link: '/' },
-        //{ name: 'About', link: '/pages/about' },
-        { name: 'Robots', link: '/pages/robots' }, 
-        { name: 'Contact', link: '/pages/contact' } 
+        { name: 'Robots', link: '/pages/robots' },
+        { name: 'Contact', link: '/pages/contact' }
     ];
 
     export let selectedNavItem = writable(navItems[0].name);
@@ -37,7 +37,7 @@
                 <li>
                     <a class="cursor-pointer p-2"
                        class:selected={$selectedNavItem === item.name}
-                       href={item.link}
+                       href="{base}{item.link}"
                        on:click={() => selectNavItem(item)}>
                         {item.name}
                     </a>
@@ -51,7 +51,7 @@
             {#each navItems as item}
                 <li>
                     <a class="cursor-pointer p-2 w-full text-center"
-                       href={item.link}
+                       href="{base}{item.link}"
                        on:click={() => selectNavItem(item)}>
                         {item.name}
                     </a>

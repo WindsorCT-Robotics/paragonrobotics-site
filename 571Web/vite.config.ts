@@ -1,15 +1,13 @@
 import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
-import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
 export default defineConfig({
-	plugins: [sveltekit(), tailwindcss()],
+	plugins: [sveltekit()],
 	resolve: {
 		alias: {
 			$assets: path.resolve('./src/routes/assets')
-			
 		}
 	},
-	base: "/"
+	base: "/paragonrobotics-site/" // Ensure this matches your repo name
 });
