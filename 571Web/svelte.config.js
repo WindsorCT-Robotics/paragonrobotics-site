@@ -5,6 +5,7 @@ export default {
     adapter: adapter(),
     paths: {
       base: '', 
+      relative: false    
     }
   }
 };

@@ -1,4 +1,4 @@
-import{t as s,a as n}from"../chunks/DfGFxowE.js";import"../chunks/DueHV8WN.js";import{t as c,k as o,o as v,m as i}from"../chunks/DIAvq5ou.js";import{s as m,N as b}from"../chunks/7KfnAVjf.js";import{p as h}from"../chunks/BNlucBsJ.js";var u=s(`<div><h1 class="text-2xl font-bold">2025 Robot Update 1</h1> <p><br> We recently got a Swerve Drive Mechanism for our robot. 
+import{t as s,a as n}from"../chunks/DfGFxowE.js";import"../chunks/DueHV8WN.js";import{t as c,k as o,o as v,m as i}from"../chunks/DIAvq5ou.js";import{s as m,N as b}from"../chunks/D-TgLH8t.js";import{p as h}from"../chunks/BNlucBsJ.js";var u=s(`<div><h1 class="text-2xl font-bold">2025 Robot Update 1</h1> <p><br> We recently got a Swerve Drive Mechanism for our robot. 
     This allows for a very percise and agile movement system. 
     It is very useful for our robot to be able to move around 
     the arena with very precise movements. We are currently 
