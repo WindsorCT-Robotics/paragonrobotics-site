@@ -1,0 +1,12 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/pages/contact": [
+		"src/routes/+layout.ts"
+	],
+	"/pages/robots": [
+		"src/routes/+layout.ts"
+	]
+}

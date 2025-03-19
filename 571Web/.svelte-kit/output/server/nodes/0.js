@@ -1,0 +1,10 @@
+import * as universal from '../entries/pages/_layout.ts.js';
+
+export const index = 0;
+let component_cache;
+export const component = async () => component_cache ??= (await import('../entries/pages/_layout.svelte.js')).default;
+export { universal };
+export const universal_id = "src/routes/+layout.ts";
+export const imports = ["_app/immutable/nodes/0.BJx1tUbc.js","_app/immutable/chunks/DfGFxowE.js","_app/immutable/chunks/DIAvq5ou.js"];
+export const stylesheets = ["_app/immutable/assets/0.h4p8dGuS.css"];
+export const fonts = [];
