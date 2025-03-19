@@ -4,7 +4,7 @@ export default {
   kit: {
     adapter: adapter(),
     paths: {
-      base: '', 
+      base: process.env.NODE_ENV === 'production' ? '/paragonrobotics-site' : '',
     }
   }
 };
