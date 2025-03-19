@@ -94,14 +94,20 @@
     "src": "src/routes/+layout.ts",
     "isEntry": true
   },
+  "src/routes/+page.server.ts": {
+    "file": "entries/pages/_page.server.ts.js",
+    "name": "entries/pages/_page.server.ts",
+    "src": "src/routes/+page.server.ts",
+    "isEntry": true
+  },
   "src/routes/+page.svelte": {
     "file": "entries/pages/_page.svelte.js",
     "name": "entries/pages/_page.svelte",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js",
-      "_Navbar.js"
+      "_Navbar.js",
+      "_index.js"
     ]
   },
   "src/routes/assets/images/2023robot.jpg": {

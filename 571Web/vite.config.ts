@@ -9,5 +9,5 @@ export default defineConfig({
 			$assets: path.resolve('./src/routes/assets')
 		}
 	},
-	base: "/paragonrobotics-site/" // Ensure this matches your repo name
+	base: "/paragonrobotics-site/" 
 });

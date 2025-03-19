@@ -11,7 +11,7 @@ export const nodes = [
 export const server_loads = [];
 
 export const dictionary = {
-		"/": [2],
+		"/": [~2],
 		"/pages/contact": [3],
 		"/pages/robots": [4]
 	};
