@@ -4,6 +4,10 @@ let base = "";
 let assets = base;
 const app_dir = "_app";
 const initial = { base, assets };
+function override(paths) {
+  base = paths.base;
+  assets = paths.assets;
+}
 function reset() {
   base = initial.base;
   assets = initial.assets;
@@ -544,7 +548,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "v9vr3m"
+  version_hash: "yowygh"
 };
 async function get_hooks() {
   let handle;
@@ -567,18 +571,19 @@ export {
   base as b,
   app_dir as c,
   read_implementation as d,
-  set_private_env as e,
-  prerendering as f,
+  options as e,
+  set_private_env as f,
   get_hooks as g,
-  set_public_env as h,
-  set_safe_public_env as i,
-  set_read_implementation as j,
-  set_assets as k,
-  set_building as l,
-  set_manifest as m,
-  set_prerendering as n,
-  options as o,
+  prerendering as h,
+  set_public_env as i,
+  set_safe_public_env as j,
+  set_read_implementation as k,
+  set_assets as l,
+  set_building as m,
+  set_manifest as n,
+  override as o,
   public_env as p,
+  set_prerendering as q,
   reset as r,
   safe_public_env as s
 };

@@ -77,7 +77,7 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "css": [
-      "_app/immutable/assets/_layout.Dd1CMOq5.css"
+      "_app/immutable/assets/_layout.BhbOs63o.css"
     ]
   },
   "src/routes/+layout.ts": {
@@ -92,8 +92,8 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_Navbar.js",
-      "_index.js"
+      "_index.js",
+      "_Navbar.js"
     ]
   },
   "src/routes/assets/images/2023robot.jpg": {
