@@ -1,6 +1,6 @@
 import "clsx";
 import { N as Navbar } from "../../../../chunks/Navbar.js";
-import { I as fallback, J as attr_class, S as attr, K as bind_props, M as stringify } from "../../../../chunks/index.js";
+import { J as fallback, K as attr_class, S as attr, E as bind_props, M as stringify } from "../../../../chunks/index.js";
 const r23 = "/paragonrobotics-site/app/immutable/assets/2023robot.CNb6onnC.jpg";
 function _3r($$payload, $$props) {
   let className = fallback($$props["className"], "");

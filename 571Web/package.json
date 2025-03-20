@@ -38,6 +38,7 @@
 		"vite": "^6.2.1"
 	},
 	"dependencies": {
+		"@rollup/rollup-win32-ia32-msvc": "^4.36.0",
 		"@sveltejs/adapter-node": "^5.2.12",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"body-parser": "^1.20.3",

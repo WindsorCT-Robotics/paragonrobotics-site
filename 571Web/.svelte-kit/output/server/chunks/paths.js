@@ -2,10 +2,6 @@ let base = "/paragonrobotics-site";
 let assets = base;
 const app_dir = "app";
 const initial = { base, assets };
-function override(paths) {
-  base = paths.base;
-  assets = paths.assets;
-}
 function reset() {
   base = initial.base;
   assets = initial.assets;
@@ -17,7 +13,6 @@ export {
   assets as a,
   base as b,
   app_dir as c,
-  override as o,
   reset as r,
   set_assets as s
 };

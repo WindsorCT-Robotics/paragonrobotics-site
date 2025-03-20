@@ -1,6 +1,6 @@
 import "clsx";
 import { N as Navbar } from "../../chunks/Navbar.js";
-import { I as fallback, J as attr_class, K as bind_props, M as stringify } from "../../chunks/index.js";
+import { J as fallback, K as attr_class, E as bind_props, M as stringify } from "../../chunks/index.js";
 function Article2025Update1($$payload, $$props) {
   let className = fallback($$props["className"], "");
   $$payload.out += `<div${attr_class(`outline-2 outline-white p-4 bg-zinc-900 rounded-lg shadow-lg border border-gray-700 ${stringify(className)}`)}><h1 class="text-2xl font-bold">2025 Robot Update 1</h1> <p><br> We recently got a Swerve Drive Mechanism for our robot. 

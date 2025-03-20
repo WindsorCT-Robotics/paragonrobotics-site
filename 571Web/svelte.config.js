@@ -4,7 +4,8 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: '/paragonrobotics-site'
+      base: '/paragonrobotics-site',
+      relative: false
     },
     appDir: 'app',
     prerender: {

@@ -6,10 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         windsorRed: '#822224', // Custom color
-      },
-      fontFamily: {
-        evliEmpire: ['EvliEmpire', 'sans-serif'], // Custom font family
-      },
+      }
     },
   },
   plugins: [],

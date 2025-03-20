@@ -13,7 +13,6 @@
 }
 
 #maintext {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     @apply shadow-xl;
     @apply p-8;
     @apply bg-red-900;

@@ -1,4 +1,4 @@
-import { I as fallback, T as ensure_array_like, S as attr, J as attr_class, G as escape_html, U as store_get, M as stringify, V as unsubscribe_stores, K as bind_props, C as pop, A as push } from "./index.js";
+import { J as fallback, T as ensure_array_like, S as attr, K as attr_class, I as escape_html, U as store_get, M as stringify, V as unsubscribe_stores, E as bind_props, C as pop, A as push } from "./index.js";
 import { w as writable } from "./index2.js";
 import { b as base } from "./paths.js";
 const logo = "/paragonrobotics-site/app/immutable/assets/logo.C2OPpdzW.png";

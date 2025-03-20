@@ -4,6 +4,7 @@
   import Article2025Update2 from './assets/Article2025Update2.svelte';
 </script>
 
+
 <div id="bg" class="bg-zinc-800 text-white min-h-screen">
   <Navbar />
 

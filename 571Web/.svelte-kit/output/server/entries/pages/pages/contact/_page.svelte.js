@@ -1,5 +1,5 @@
 import "clsx";
-import { N as sanitize_props, O as rest_props, I as fallback, P as spread_attributes, Q as clsx, R as slot, K as bind_props, C as pop, A as push, J as attr_class, S as attr, M as stringify } from "../../../../chunks/index.js";
+import { N as sanitize_props, O as rest_props, J as fallback, P as spread_attributes, Q as clsx, R as slot, E as bind_props, C as pop, A as push, K as attr_class, S as attr, M as stringify } from "../../../../chunks/index.js";
 import { twMerge } from "tailwind-merge";
 import { N as Navbar } from "../../../../chunks/Navbar.js";
 function P($$payload, $$props) {

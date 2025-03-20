@@ -84,8 +84,11 @@
     "name": "entries/pages/_layout.svelte",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
     "css": [
-      "app/immutable/assets/_layout.DB5sOQJH.css"
+      "app/immutable/assets/_layout.fRPTXVYG.css"
     ]
   },
   "src/routes/+layout.ts": {
