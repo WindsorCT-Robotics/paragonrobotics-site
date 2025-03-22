@@ -1,6 +1,72 @@
+body {
+  background-color: maroon;
+}
+
+.link-styles {
+  color: #cccccc;
+  text-decoration: none;
+}
 
 #navbar {
-  background-color: maroon;   
-  color: aliceblue;
-  text-decoration: none;  
+  background-color: grey;   
+  padding-top: 0;
+}
+
+#hifi {
+  object-fit: contain; 
+  max-width: 50%; 
+  max-height: 50%; 
+  overflow: hidden;
+  border: 14%;
+}
+
+#img {
+  width: 100%; 
+  height: auto; 
+}
+
+.bod {
+  font-family: Arial, sans-serif;
+  color: #cccccc;
+  text-decoration: none;
+
+  font-size: x-large;
+}
+
+
+
+.link-styles {
+  margin: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+#robots-header {
+  margin-top: 50px;
+}
+
+#hifi img {
+  width: 300px;
+}
+
+#logoImage {
+  object-fit: contain; 
+  max-width: 50%; 
+  max-height: 50%; 
+  overflow: hidden;
+  padding-right: 0%;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 50px;
 }
