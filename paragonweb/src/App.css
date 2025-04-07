@@ -140,3 +140,15 @@ body {
   position: fixed;
   bottom: 0;
 }
+
+
+
+#team img {
+  width: auto; 
+  height: auto;
+  border-radius: 8px;
+}
+
+#team p {
+  flex: 1; 
+}
