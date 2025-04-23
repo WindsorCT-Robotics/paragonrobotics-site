@@ -110,28 +110,41 @@ function Robots() {
 }
 
 function Subteams() {
-    return (
-      <div>
-        <div id="team"><h2>Build</h2>
-          <p>The Build team subgroup of Team Paragon designs and builds the robot. 
-            Due to the annually-changing rules of the game, the Build team is required to plan 
-            a different robot every year. The group also builds a prototype if time permits. 
-            Using all the tools at their disposal, the team builds the most efficient robot that they can. 
-            The build team is in charge of the wiring of the components in the robot. 
-            The Build team is responsible for all of the non-cosmetic hardware in the robot.</p>
-          <img src="/images/build2.jpg"></img>
+  return (
+    <div className="subteams-container">
+      <div className="subteam-section">
+        <img src="/images/build2.jpg" alt="Build team working" />
+        <div>
+          <h2>Build</h2>
+          <p>
+            The Build team subgroup of Team Paragon designs and builds the robot. 
+            Due to the annually-changing rules of the game, the Build team is required 
+            to plan a different robot every year. The group also builds a prototype if 
+            time permits. Using all the tools at their disposal, the team builds the most 
+            efficient robot that they can. The Build team is in charge of the wiring of the 
+            components in the robot. The Build team is responsible for all of the 
+            non-cosmetic hardware in the robot.
+          </p>
         </div>
-        <div id="team"><h2>Programming</h2>
-          <p>The programming subgroup writes software that controls the robot in the 
+      </div>
+
+      <div className="subteam-section">
+        <img src="/images/programming.jpeg" alt="Programming team in action" />
+        <div>
+          <h2>Programming</h2>
+          <p>
+            The programming subgroup writes software that controls the robot in the 
             tele-operational and autonomous phases of the competition. Every year 
             the Programming team has to program the robot to follow the chosen strategy.
             The code is split up into multiple pieces and each member of the programming 
             team writes one or more pieces in order to work efficiently. This team is 
-            responsible for all the software in the robot.</p>
-          <img src="/images/programming.jpeg"></img>
+            responsible for all the software in the robot.
+          </p>
         </div>
       </div>
-    )
+    </div>
+  );
 }
+
 
 export default App;
