@@ -1,60 +1,78 @@
+/* Base Styles */
 body {
   background-color: #1a1a1a;
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   color: #ffffff;
+  box-sizing: border-box;
 }
-.home-container {
-  background-color: #1a1a1a;
+
+h1, h2, h3 {
+  font-weight: 600;
 }
-.link-styles {
+
+a {
   color: #ffffff;
   text-decoration: none;
-  margin: 0 15px;
   font-size: 18px;
   transition: color 0.3s ease;
 }
 
-.link-styles:hover {
+a:hover {
   color: #ffd700;
 }
 
-#p-text {
-  font-size: medium;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-#about {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  background-color: #212121;
-  position: fixed;
-  bottom: 0;
-}
-
+/* Navbar */
 #navbar {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
   background-color: #212121;
-  padding: 10px 0;
+  padding: 10px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 #navbar img {
   max-height: 50px;
-  margin-right: 20px;
+  margin: 10px;
 }
 
 #navbar a {
-  padding: 10px 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
-@media (max-width: 768px) {
-  .robots-container {
-    grid-template-columns: 1fr;
-  }
+/* Logo */
+#logoImage {
+  object-fit: contain;
+  max-width: 50%;
+  height: auto;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Home Container */
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Top Text */
+#topText {
+  align-self: flex-start;
+  margin-left: auto;
+  text-align: right;
+}
+
+/* Robots Section */
+#robots-header {
+  margin-top: 50px;
+  text-align: center;
 }
 
 .robots-container {
@@ -64,21 +82,18 @@ body {
   gap: 20px;
   margin-top: 50px;
   padding: 0 5%;
+  background-color: #1a1a1a;
 }
 
 #mazu, #hifi, #twtr {
   max-width: 250px;
+  width: 100%;
   border: 4px solid #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-}
-
-.robots-title {
-  grid-column: 1 / span 2;
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
 }
 
 #mazu img, #hifi img, #twtr img {
@@ -87,61 +102,28 @@ body {
   object-fit: contain;
 }
 
-.bod {
-  font-size: x-large;
-  text-align: center;
-}
-
-.centered-content {
-  text-align: center;
-}
-
-#robots-header {
-  margin-top: 50px;
-  text-align: center;
-}
-
-#logoImage {
-  object-fit: contain;
-  max-width: 50%;
-  max-height: 50%;
-  overflow: hidden;
-}
-
-.logo-container {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.home-container {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.robots-container {
-  background-color: #1a1a1a;
-}
-
+/* Team Section */
 #team {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  margin-top: 50px;
 }
 
 #team .text-column {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1;
 }
 
 #team img {
-  width: auto;
+  max-width: 200px;
   height: auto;
   border-radius: 8px;
-  max-height: 200px;
 }
 
+/* Subteams */
 .subteams-container {
   display: flex;
   flex-direction: column;
@@ -162,6 +144,7 @@ body {
 
 .subteam-section img {
   max-width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   margin: 10px;
@@ -175,14 +158,121 @@ body {
   font-size: 18px;
 }
 
+/* About Section */
+#about {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  background-color: #212121;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Misc */
+.bod {
+  font-size: x-large;
+  text-align: center;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+#p-text {
+  font-size: medium;
+  padding: 0 10%;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .robots-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    
+  }
+
+  .robots-container {
+    grid-template-columns: 1fr;
+  }
+
   .subteam-section {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .subteam-section img {
     max-width: 100%;
     margin: 0 0 20px 0;
+  }
+
+  #team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #team img {
+    max-width: 100%;
+  }
+}
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #212121;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+  border-radius: 12px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #212121;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .nav-links.show {
+    display: flex;
   }
 }

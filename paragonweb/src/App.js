@@ -1,17 +1,38 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import logoImage from './assets/textlesslogo.png';
+import React, { useState } from 'react';
+
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <Router>
       <div className="bod">
         <nav id="navbar">
           <img src={logoImage} alt="logo" id="logoImage" />
-          <Link className="link-styles" to="/">Home</Link>
-          <Link className="link-styles" to="/robots">Robots</Link>
-          <Link className='link-styles' to="/subteams">Subteams</Link>
+
+          {/* Hamburger Icon */}
+          <div className="hamburger" onClick={toggleMenu}>
+            &#9776;
+          </div>
+
+          {/* Links */}
+          <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
+            <Link className="link-styles" to="/" onClick={closeMenu}>Home</Link>
+            <Link className="link-styles" to="/robots" onClick={closeMenu}>Robots</Link>
+            <Link className="link-styles" to="/subteams" onClick={closeMenu}>Subteams</Link>
+          </div>
         </nav>
+
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -114,8 +135,9 @@ function Subteams() {
     <div className="subteams-container">
       <div className="subteam-section">
         <img src="/images/build2.jpg" alt="Build team working" />
+        <div id="topText"><h2>Build</h2></div>
         <div>
-          <h2>Build</h2>
+          
           <p>
             The Build team subgroup of Team Paragon designs and builds the robot. 
             Due to the annually-changing rules of the game, the Build team is required 
@@ -130,8 +152,8 @@ function Subteams() {
 
       <div className="subteam-section">
         <img src="/images/programming.jpeg" alt="Programming team in action" />
+        <div id="topText"><h2>Programming</h2></div>
         <div>
-          <h2>Programming</h2>
           <p>
             The programming subgroup writes software that controls the robot in the 
             tele-operational and autonomous phases of the competition. Every year 
