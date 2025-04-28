@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import logoImage from './assets/textlesslogo.png';
 import React, { useState } from 'react';
 
+//mobile ui
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
