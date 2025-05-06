@@ -3,30 +3,22 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import logoImage from './assets/textlesslogo.png';
 import React, { useState } from 'react';
 
-//mobile ui
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
   return (
     <Router>
       <div className="bod">
         <nav id="navbar">
           <img src={logoImage} alt="logo" id="logoImage" />
 
-          {/* Hamburger Icon */}
           <div className="hamburger" onClick={toggleMenu}>
             &#9776;
           </div>
 
-          {/* Links */}
           <div className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
             <Link className="link-styles" to="/" onClick={closeMenu}>Home</Link>
             <Link className="link-styles" to="/robots" onClick={closeMenu}>Robots</Link>
@@ -34,38 +26,31 @@ function App() {
           </div>
         </nav>
 
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/robots" element={<Robots />} />
+          <Route path="/subteams" element={<Subteams />} />
           <Route path="*" element={<Home />} />
-          <Route path="/subteams" element={<Subteams/>}/>
         </Routes>
       </div>
     </Router>
   );
 }
-
 function Home() {
   return (
-    <div className="home-container">
-      <h1>Welcome to Paragon Robotics!</h1>
-
-      <div id="MS"><h3>Mission Statement</h3>
-      
-      <p>Paragon
-Robotics aims to equip students with the knowledge, skills, and confidence to solve
-problems through competitive design challenges.&nbsp;
-We use mentor-led hands-on engineering to build not just robots, but creativity,
-teamwork, and leadership.</p>
-      
+    <div className="home-layout">
+      <div className="center-title">
+        <h1>Welcome to Paragon Robotics!</h1>
       </div>
-
-      
-      <div id="about"><h3>About Our Team</h3>
-      
-      <p id="p-text">Paragon Robotics ​is 501.c.3 nonprofit community team located in Windsor, CT comprised of high school students from Windsor and the surrounding area. The team was founded in 2001 and prides itself on giving every student the opporunity to pursue their interests with hands-on, real world engineering design and manufacturing experiences.&nbsp; We are relatively small team but that affords us the flexibility to give every student unique attention.</p>
-      
+      <div className="side-container">
+        <div className="side-box left">
+          <h2>Mission Statement</h2>
+          <p>Paragon Robotics aims to equip students with the knowledge, skills, and confidence to work in various STEM-related fields.</p>
+        </div>
+        <div className="side-box right">
+          <h2>About Our Team</h2>
+          <p>Paragon Robotics is a 501(c)(3) nonprofit community team located in Windsor, CT.</p>
+        </div>
       </div>
     </div>
   );
