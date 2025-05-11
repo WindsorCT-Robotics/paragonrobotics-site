@@ -37,78 +37,93 @@ function App() {
   );
 }
 function Home() {
+  const sections = [
+    {
+      title: "Mission Statement",
+      content: "Paragon Robotics equips students with the knowledge, skills, and confidence to work in various STEM-related fields."
+    },
+    {
+      title: "About Our Team",
+      content: "Paragon Robotics is a 501(c)(3) nonprofit community team located in Windsor, CT. Our students talents include a wide range of engineering topics from CAD work to Manufacturing."
+    },
+    {
+      title: "Community Service",
+      content: "We aim to make a positive impact through volunteering and outreach. We host numerous can drives throughout the year and we assist with local community events."
+    }
+  ];
+  
   return (
     <div className="home-layout">
+      <h1>Welcome to Paragon Robotics!</h1>
       <div className="center-title">
-        <h1>Welcome to Paragon Robotics!</h1>
+        
       </div>
       <div className="side-container">
-        <div className="side-box left">
-          <h2>Mission Statement</h2>
-          <p>Paragon Robotics aims to equip students with the knowledge, skills, and confidence to work in various STEM-related fields.</p>
-        </div>
-        <div className="side-box right">
-          <h2>About Our Team</h2>
-          <p>Paragon Robotics is a 501(c)(3) nonprofit community team located in Windsor, CT.</p>
-        </div>
+        {sections.map((section, index) => (
+          <div key={index} className="side-box">
+            <h2>{section.title}</h2>
+            <p>{section.content}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
+
 function Robots() {
   return (
     <div className="robots-container">
       <h1 className="robots-title">Robots</h1>
-      <div id="mazu">
+      <div className="robot-card">
         <h3>Mazu</h3><p>2025</p>
         <img id="img" src="/images/2025-robot.jpeg" alt="Robot25" />
       </div>
-      <div id="hifi">
+      <div className="robot-card">
         <h3>Hi-fi</h3><p>2024</p>
         <img id="img" src="/images/2024-robot.png" alt="Robot24" />
       </div>
-       <div id="twtr">
+       <div className="robot-card">
         <h3>Reddy</h3><p>2023</p>
         <img id="img" src="/images/2023-robot.jpg" alt="Robot23" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Rebel</h3><p>2020</p>
         <img id="img" src="/images/2020-robot.JPG" alt="Robot20" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>MongoBot</h3><p>2006-2012</p>
         <img id="img" src="/images/mongobot.jpeg" alt="mongobot" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Sprocket</h3><p>2018</p>
         <img id="img" src="/images/2018-robot.JPEG" alt="Robot18" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Dr. Seuss</h3><p>2014</p>
         <img id="img" src="/images/2014-robot.jpeg" alt="Robot14"/>
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Nemo</h3><p>2013</p>
         <img id="img" src="/images/2013-robot.jpeg" alt="Robot13" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Metal Arc</h3><p>2012</p>
         <img id="img" src="/images/2012-robot.jpeg" alt="Robot12" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Blue Cyclone</h3><p>2011</p>
         <img id="img" src="/images/2011-robot.jpeg" alt="Robot11" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Techno Drifter</h3><p>2009</p>
         <img id="img" src="/images/2009-robot.jpeg" alt="Robot09" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Guido</h3><p>2013</p>
         <img id="img" src="/images/2008-robot.jpeg" alt="Robot08" />
       </div>
-      <div id="twtr">
+      <div className="robot-card">
         <h3>Spyro</h3><p>2006</p>
         <img id="img" src="/images/2006-robot.jpeg" alt="Robot06" />
       </div>
