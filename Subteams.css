@@ -5,7 +5,11 @@
 .u-section-1 .u-text-1 {
   margin-bottom: 20px;
   margin-top: 20px;
-}.u-section-2 .u-sheet-1 {
+} .u-section-2 {
+  background-position: 50% 50%;
+}
+
+.u-section-2 .u-sheet-1 {
   min-height: 500px;
 }
 
@@ -74,7 +78,11 @@
     width: 340px;
     margin-top: -177px;
   }
-}.u-section-3 .u-sheet-1 {
+} .u-section-3 {
+  background-position: 50% 50%;
+}
+
+.u-section-3 .u-sheet-1 {
   min-height: 500px;
 }
 
@@ -142,7 +150,11 @@
   .u-section-3 .u-group-1 {
     width: 340px;
   }
-}.u-section-4 .u-sheet-1 {
+} .u-section-4 {
+  background-position: 50% 50%;
+}
+
+.u-section-4 .u-sheet-1 {
   min-height: 500px;
 }
 
